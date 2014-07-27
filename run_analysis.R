@@ -22,8 +22,8 @@ setwd("./DATA")
 # so read a few files from download location 
 # subj_train<-read.table("./DATA/train/subject_train.txt")
 # bgx_test<-read.table("./DATA/test/Inertial Signals/body_gyro_x_test.txt")
-# act_labels<-read.table("./DATA/activity_labels.txt")
-# features<-read.table("./DATA/features.txt")
+act_labels<-read.table("./DATA/activity_labels.txt")
+features<-read.table("./DATA/features.txt")
 
 
 # We wish to extract only the measurements on mean and standard deviation for each measurement, 
