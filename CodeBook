@@ -1,0 +1,33 @@
+C Fanara
+getting and cleaning data project 1
+
+LIST OF VARIABLES (shows where first defined, line )
+------------------
+"act_labels" = the labels for the activities, as read from file , 25
+"AggAllTT" = aggregated AllTT, e.g after grouping by subject and activity, 86: this is the final dataset (=Aggregated All+Test+Train)
+"All_Test" = the Test data after column binding, 48
+"All_Train" = the Train data after column binding, 60
+"AllTT" = the row bound of the All_Test and All_train datasets, 65
+"bgx_test" = used to check data set content (only), 49
+"features"= from the file features.txt,26  
+"list_f" = list of the features from list_feat, 34      
+"list_feat" = melted dataframe from dataset features, 33          
+"MatchNdx" = the vecor containing the indexes matching the column names (for mean, standard deviation) , 35    
+"MatchXtest"  = selection of matching columns of test dataset (according to MatchNdx) , 42
+"MatchXtrain" = selection of matching columns of train dataset (according to MatchNdx) , 42
+"Name_list" = list of names of AggAllTT, in char format ,110
+"NewNames" = list of names of AggAllTT after removal of 'bad' characters  ,111
+"subj_test" = the subjects within test, from subject_test.txt , 45
+"subj_train" = = the subjects within train, from subject_train.txt , 45
+"temp"  = temporary to receive downloaded file  
+"X_test" = the read of X test dataset ,39 
+"X_Train"  = the read of X train dataset , 51     
+"Y_Test"  = the read of Y test dataset (activity labels) , 46
+"Y_Train" = the read of Y train dataset,(activity labels) , 58
+
+OTHERS (used at start to open once the connectin and download, 
+thereafter removed from .R script, but documented in the readme.doc and readme.md files
+to which the line is now referred (.md file)
+"con"  = connection (structure) to store the unzipped, initialized with working directory ,     
+"data" = the unzipped file structure location        
+"temp" = to host the downloaded zipped file              
